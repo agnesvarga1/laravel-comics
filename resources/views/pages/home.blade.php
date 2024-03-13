@@ -28,5 +28,59 @@
             <button class="btn-load-comics">load more</button>
           </div>
       </div>
+      <div class="blue-stripe">
+        <div class="card-container">
+          <div  class="card-va">
+            <figure>
+              <img
+                width="50"
+                src="{{  Vite::asset('resources/img/buy-comics-digital-comics.png') }}"
+                alt="icon-services"
+              />
+            </figure>
+            <h4>Digital Comics</h4>
+          </div>
+          <div  class="card-va">
+            <figure>
+              <img
+                width="50"
+                src="{{  Vite::asset('resources/img/buy-comics-merchandise.png') }}"
+                alt="icon-services"
+              />
+            </figure>
+            <h4>DC merchandise</h4>
+          </div>
+          <div  class="card-va">
+            <figure>
+              <img
+                width="50"
+                src="{{  Vite::asset('resources/img/buy-comics-shop-locator.png') }}"
+                alt="icon-services"
+              />
+            </figure>
+            <h4>comic shop locator</h4>
+          </div>
+          <div  class="card-va">
+            <figure>
+              <img
+                width="50"
+                src="{{  Vite::asset('resources/img/buy-comics-subscriptions.png') }}"
+                alt="icon-services"
+              />
+            </figure>
+            <h4>Subscription</h4>
+          </div>
+          <div  class="card-va">
+            <figure>
+              <img
+                width="50"
+                src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}"
+                alt="icon-services"
+              />
+            </figure>
+            <h4>"DC power visa</h4>
+          </div>
+        </div>
+      </div>
 </main>
 @endsection

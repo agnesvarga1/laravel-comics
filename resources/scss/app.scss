@@ -1,5 +1,6 @@
 @use "./partials/variables" as *;
 @import "./partials/header.scss";
+@import "./partials/footer.scss";
 @import "bootstrap/scss/bootstrap";
 
 * {
@@ -50,20 +51,10 @@ button {
     padding-inline: 2rem;
     font-size: 1rem;
 }
-button {
-    margin-bottom: -60px;
-    background-color: $blue-main;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: 60px;
-    padding-inline: 2rem;
-    font-size: 1rem;
-}
+
 .bottom-part {
     background-color: $bg-dark;
-    padding-block: 1rem;
+    padding-top: 1rem;
     text-align: center;
 
     .comics-main {
@@ -86,6 +77,7 @@ button {
             h4 {
                 padding-block: 0.2rem;
                 text-align: center;
+                font-size: 1rem;
                 font-weight: 100;
             }
         }
@@ -102,4 +94,32 @@ button {
     padding-block: 2rem;
     width: 75%;
     margin: 0 auto;
+}
+
+.blue-stripe {
+    background-color: $blue-main;
+
+    .card-container {
+        padding: 2rem 5rem;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+        .card-va {
+            width: calc(100% / 5);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            figure {
+                img {
+                    height: 60px;
+                }
+            }
+            h4 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+        }
+    }
 }
