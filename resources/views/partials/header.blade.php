@@ -1,7 +1,7 @@
 <header>
     <nav>
       <figure>
-        <img src="{{  Vite::asset('resources/img/dc-logo.png') }}" alt="logo" width="90" />
+       <a href="{{route("homePage")}}"> <img src="{{  Vite::asset('resources/img/dc-logo.png') }}" alt="logo" width="90" /></a>
       </figure>
       <ul>
           <li><a href="#">characters</a></li>

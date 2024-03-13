@@ -26,3 +26,80 @@ img {
 main {
     color: #fff;
 }
+
+.jumbo {
+    // background-image: url("../assets/img/jumbotron.jpg");
+    background-image: url("../img/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    .jumbo-main {
+        height: inherit;
+        display: flex;
+        align-items: end;
+    }
+}
+button {
+    margin-bottom: -60px;
+    background-color: $blue-main;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 60px;
+    padding-inline: 2rem;
+    font-size: 1rem;
+}
+button {
+    margin-bottom: -60px;
+    background-color: $blue-main;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 60px;
+    padding-inline: 2rem;
+    font-size: 1rem;
+}
+.bottom-part {
+    background-color: $bg-dark;
+    padding-block: 1rem;
+    text-align: center;
+
+    .comics-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .comic {
+            margin-bottom: 1rem;
+            flex-basis: calc(100% / 6 - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 200px;
+                // aspect-ratio: 1;
+            }
+            h4 {
+                padding-block: 0.2rem;
+                text-align: center;
+                font-weight: 100;
+            }
+        }
+    }
+    .load-more {
+        .btn-load-comics {
+            margin: 0;
+            height: 50px;
+        }
+    }
+}
+.container {
+    background: none;
+    padding-block: 2rem;
+    width: 75%;
+    margin: 0 auto;
+}
