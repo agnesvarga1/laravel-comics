@@ -1,1 +1,28 @@
+@use "./partials/variables" as *;
+@import "./partials/header.scss";
 @import "bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+main {
+    color: #fff;
+}
