@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Home\DCController as
+DCController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $comics = config("comics");
-    return view('pages.home',compact("comics"));
-})->name("homePage");
+// Route::get('/', function () {
+//     $comics = config("comics");
+//     return view('pages.home',compact("comics"));
+// })->name("homePage");
 
-Route::get('/games', function () {
 
-    return view('pages.games');
-})->name("gamePage");
+
+Route::get('/', [DCController::class, 'index'])->name('homePage');
+Route::get('/games', [DCController::class, 'charsFun'])->name('CharactersPage');
